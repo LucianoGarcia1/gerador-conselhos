@@ -1,0 +1,86 @@
+@import 'reset';
+@import 'variables';
+@import 'mixins';
+@import 'animation';
+
+.principal{
+    width: 100%;
+    height: 100vh;
+    @include center;
+
+    .container{
+        width: 35%;
+        height: auto;
+        padding: 30px 0px 70px 0px;
+        @include center;
+        gap: 2em;
+        background-color: $DarkGrayish-Blue;
+        border-radius: 10px;
+        position: relative;
+
+        .cId{
+            @include center;
+            flex-direction: row;
+            gap: 0.5em;
+
+            h3{
+                font-size: 0.8em;
+                color: $NeonGreen;
+                letter-spacing: 4px;
+                font-weight: 800;
+            }
+
+            span{
+                font-size: 0.8em;
+                color: $NeonGreen;
+                letter-spacing: 2px;
+                font-weight: 800;
+            }
+        }
+        
+        p.texto{
+            color: $LightCyan;
+            font-size: 1.4em;
+            font-weight: 800;
+            text-align: center;
+            animation: showP .5s linear;
+        }
+
+        .div{
+            width: 80%;
+        }
+
+        .button{
+            position: absolute;
+            bottom: -22.50px;
+
+            .btn{
+                width: 55px;
+                height: 55px;
+                background-color: $NeonGreen;
+                cursor: pointer;
+                border-radius: 100%;
+                border: transparent;
+                transition: all .5s;
+
+                @include center;
+
+                &:hover{
+                    box-shadow: 0 0 15px 10px $NeonGreen;
+                }
+
+
+                img.rounted{
+                    animation: rounted .5s forwards;
+                }
+                
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 760px){
+    .container{
+        min-width: 75%;
+    }
+}

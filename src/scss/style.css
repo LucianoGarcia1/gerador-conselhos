@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Manrope', sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #1f2632;
+}
+
+@-webkit-keyframes rounted {
+  0% {
+    -webkit-transform: rotate(120deg);
+            transform: rotate(120deg);
+  }
+  50% {
+    -webkit-transform: rotate(240deg);
+            transform: rotate(240deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rounted {
+  0% {
+    -webkit-transform: rotate(120deg);
+            transform: rotate(120deg);
+  }
+  50% {
+    -webkit-transform: rotate(240deg);
+            transform: rotate(240deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes showP {
+  0% {
+    opacity: 0;
+    min-height: 0;
+  }
+  100% {
+    min-height: auto;
+    opacity: 1;
+  }
+}
+
+@keyframes showP {
+  0% {
+    opacity: 0;
+    min-height: 0;
+  }
+  100% {
+    min-height: auto;
+    opacity: 1;
+  }
+}
+
+.principal {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.principal .container {
+  width: 35%;
+  height: auto;
+  padding: 30px 0px 70px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2em;
+  background-color: #323a49;
+  border-radius: 10px;
+  position: relative;
+}
+
+.principal .container .cId {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.principal .container .cId h3 {
+  font-size: 0.8em;
+  color: #52ffa8;
+  letter-spacing: 4px;
+  font-weight: 800;
+}
+
+.principal .container .cId span {
+  font-size: 0.8em;
+  color: #52ffa8;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+
+.principal .container p.texto {
+  color: #cee3e9;
+  font-size: 1.4em;
+  font-weight: 800;
+  text-align: center;
+  -webkit-animation: showP .5s linear;
+          animation: showP .5s linear;
+}
+
+.principal .container .div {
+  width: 80%;
+}
+
+.principal .container .button {
+  position: absolute;
+  bottom: -22.50px;
+}
+
+.principal .container .button .btn {
+  width: 55px;
+  height: 55px;
+  background-color: #52ffa8;
+  cursor: pointer;
+  border-radius: 100%;
+  border: transparent;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.principal .container .button .btn:hover {
+  -webkit-box-shadow: 0 0 15px 10px #52ffa8;
+          box-shadow: 0 0 15px 10px #52ffa8;
+}
+
+.principal .container .button .btn img.rounted {
+  -webkit-animation: rounted .5s forwards;
+          animation: rounted .5s forwards;
+}
+
+@media screen and (max-width: 760px) {
+  .container {
+    min-width: 75%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
